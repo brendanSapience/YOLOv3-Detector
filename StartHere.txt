@@ -1,3 +1,7 @@
+0- You should git clone Ylo on Keras repo: https://github.com/qqwweee/keras-yolo3
+
+	=> clone it under the src folder so as to have /src/keras_yolo3/*
+
 1- Create a python virtual environment:
 
 python3 -m venv env
@@ -8,6 +12,14 @@ source env/bin/activate
       pip3 install -r ./requirements/requirements_cpu.txt
   IF GPU Available:
       pip3 install -r ./requirements/requirements_gpu.txt
+
+3- If your Final Trained Weights are missing.. Copy them to the repo under /Data/Model_Weights
+
+4- Run the detector:
+
+	ex: python ./ProcessFiles.py --input_images "/Users/bren/Documents/git/YOLOv3-Detector/Data/Source_Images/Test_Images" --result_file "/Users/bren/Documents/git/YOLOv3-Detector/all.csv"
+
+
 
 Other info:
 
