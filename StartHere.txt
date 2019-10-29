@@ -1,0 +1,15 @@
+1- Create a python virtual environment:
+
+python3 -m venv env
+source env/bin/activate
+
+2- Once in your virtual env, install all prerequisites
+  IF CPU Only:
+      pip3 install -r ./requirements/requirements_cpu.txt
+  IF GPU Available:
+      pip3 install -r ./requirements/requirements_gpu.txt
+
+Other info:
+
+-	Custom Model, Weights, Biases, etc. is in Data folder
+-	src contains a fork of the implementation of YOLOv3 for Keras
